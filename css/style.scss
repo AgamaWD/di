@@ -58,12 +58,24 @@ main {
     }
 
     &__overlay {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: #fff;
         position: absolute;
+        font-weight: 600;
         left: 0;
         top: 0;
         width: 0;
         height: 100%;
         background-color: #5a3667;
+        overflow: hidden;
+
+        span {
+            display: block;
+            opacity: 0;
+            margin-right: 5px;
+        }
     }
 
     &__person {

@@ -55,12 +55,23 @@ main {
   overflow: hidden;
 }
 .progress__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #fff;
   position: absolute;
+  font-weight: 600;
   left: 0;
   top: 0;
   width: 0;
   height: 100%;
   background-color: #5a3667;
+  overflow: hidden;
+}
+.progress__overlay span {
+  display: block;
+  opacity: 0;
+  margin-right: 5px;
 }
 .progress__person {
   position: absolute;

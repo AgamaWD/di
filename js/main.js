@@ -15,13 +15,17 @@ function main() {
 
     const diEl = document.querySelector('[data-js="di"]')
     const overlay = document.querySelector('[data-js="overlay"]')
+    const percentEl = overlay.querySelector('span')
 
     const tt = pastPercent / 20
     diEl.style.transition = 'all ' + tt + 's linear 1.5s'
     overlay.style.transition = 'width ' + tt + 's linear 1.5s'
+    percentEl.style.transition = 'opacity 0.3s linear ' + (tt + 1.5) + 's'
     diEl.style.left = pastPercent + '%'
     diEl.style.transform = 'translateX(-100%)'
     overlay.style.width = pastPercent + '%'
+    percentEl.innerHTML = pastPercent + '%'
+    percentEl.style.opacity = '1'
 
     setInterval(() => {
         let now = new Date().getTime()
