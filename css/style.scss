@@ -20,15 +20,24 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30vw;
+    gap: 10vw;
     padding: 15px;
+
+    @media (max-width: 767px) {
+        gap: 30vw;
+    }
 }
 
 .timer {
     display: flex;
-    gap: 4vw;
-    font-size: 6vw;
+    gap: 3vw;
+    font-size: 4vw;
     color: white;
+
+    @media (max-width: 767px) {
+        gap: 4vw;
+        font-size: 6vw;
+    }
 
     span {
         font-size: 200%;
@@ -51,10 +60,14 @@ main {
     &__track {
         position: relative;
         width: 100%;
-        height: 6vw;
+        height: 2vw;
         background-color: #fff;
         border-radius: 50px;
         overflow: hidden;
+
+        @media (max-width: 767px) {
+            height: 6vw;
+        }
     }
 
     &__overlay {
@@ -81,8 +94,13 @@ main {
     &__person {
         position: absolute;
         top: 100%;
-        width: 12vw;
-        height: 12vw;
+        width: 6vw;
+        height: 6vw;
+
+        @media (max-width: 767px) {
+            width: 12vw;
+            height: 12vw;
+        }
 
         &--me {
             right: 0%;

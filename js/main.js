@@ -5,7 +5,7 @@ function main() {
     const minEl = timerEl.querySelector('[data-js="min"]')
     const secEl = timerEl.querySelector('[data-js="sec"]')
     const startTimestamp = new Date(2025, 4, 26, 23).getTime()
-    const endTimestamp = new Date(2025, 7, 23, 2, 43).getTime()
+    const endTimestamp = new Date(2025, 7, 17, 2, 43).getTime()
     const nowTimestamp = new Date().getTime()
 
     const fullPeriod = endTimestamp - startTimestamp
