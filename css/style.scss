@@ -109,6 +109,7 @@ main {
         &--di {
             left: 0%;
             transform: translateX(0);
+            animation: zindex 2s linear 0s infinite;
         }
 
         img {
@@ -117,5 +118,15 @@ main {
             height: 100%;
             object-fit: contain;
         }
+    }
+}
+
+@keyframes zindex {
+    from {
+        z-index: 0;
+    }
+
+    to {
+        z-index: 1;
     }
 }

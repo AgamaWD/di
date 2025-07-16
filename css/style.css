@@ -107,6 +107,7 @@ main {
 .progress__person--di {
   left: 0%;
   transform: translateX(0);
+  animation: zindex 2s linear 0s infinite;
 }
 .progress__person img {
   display: block;
@@ -114,4 +115,13 @@ main {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@keyframes zindex {
+  from {
+    z-index: 0;
+  }
+  to {
+    z-index: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
